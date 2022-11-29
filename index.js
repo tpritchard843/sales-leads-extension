@@ -6,10 +6,6 @@ const tabBtn = document.getElementById("tab-btn")
 const deleteBtn = document.getElementById("delete-btn")
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads") )
 
-const tabs = [
-    {url: "https://www.linkedin.com/in/thomas-pritchard-a37374161/"}
-]
-
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
     render(myLeads)
